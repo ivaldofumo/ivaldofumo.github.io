@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Data & Methods | Ocean Data & Analysis</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8f9;
+            color: #17313b;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #073b4c;
+            color: white;
+        }
+
+        nav {
+            max-width: 1150px;
+            margin: auto;
+            padding: 25px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 80px 30px;
+        }
+
+        .eyebrow {
+            color: #087f8c;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.1;
+            color: #073b4c;
+        }
+
+        h2 {
+            color: #087f8c;
+            margin-top: 50px;
+        }
+
+        .method-box {
+            background: white;
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+        }
+
+        .workflow {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .step {
+            background: #e2f0ef;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #073b4c;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <nav>
+
+        <strong>Ocean Data & Analysis</strong>
+
+        <div>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="analyses.html">Analyses</a>
+            <a href="methods.html">Methods</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <p class="eyebrow">
+        DATA · PROCESSING · ANALYSIS
+    </p>
+
+    <h1>
+        Data & Methods
+    </h1>
+
+
+    <h2>
+        Study Region
+    </h2>
+
+    <div class="method-box">
+
+        <p>
+            The analyses focus on the Mozambique Channel,
+            approximately between 10°S–25°S and 35°E–48°E.
+        </p>
+
+        <p>
+            The same geographical domain is used for the
+            sea surface temperature and chlorophyll-a analyses,
+            allowing physical and biological variables to be
+            examined within the same oceanographic region.
+        </p>
+
+    </div>
+
+
+    <h2>
+        Data Sources
+    </h2>
+
+    <div class="method-box">
+
+        <h3>Sea Surface Temperature</h3>
+
+        <p>
+            NOAA Optimum Interpolation Sea Surface Temperature
+            (OISST) v2.1.
+        </p>
+
+        <p>
+            Variable: Sea Surface Temperature (SST)
+        </p>
+
+        <p>
+            Spatial resolution: 0.25° × 0.25°
+        </p>
+
+        <p>
+            Temporal resolution: Daily
+        </p>
+
+    </div>
+
+
+    <div class="method-box">
+
+        <h3>Chlorophyll-a</h3>
+
+        <p>
+            NASA Ocean Color products.
+        </p>
+
+        <p>
+            Variable: Chlorophyll-a concentration (CHL)
+        </p>
+
+        <p>
+            Unit: mg m⁻³
+        </p>
+
+    </div>
+
+
+    <h2>
+        Analysis Workflow
+    </h2>
+
+
+    <div class="workflow">
+
+        <div class="step">
+
+            <strong>01</strong>
+
+            <p>
+                Data acquisition
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>02</strong>
+
+            <p>
+                Quality control
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>03</strong>
+
+            <p>
+                Spatial subsetting
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>04</strong>
+
+            <p>
+                Temporal processing
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>05</strong>
+
+            <p>
+                Statistical analysis
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>06</strong>
+
+            <p>
+                Visualization
+            </p>
+
+        </div>
+
+
+        <div class="step">
+
+            <strong>07</strong>
+
+            <p>
+                Oceanographic interpretation
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <h2>
+        Software and Tools
+    </h2>
+
+    <div class="method-box">
+
+        <ul>
+
+            <li>Python</li>
+
+            <li>NumPy</li>
+
+            <li>pandas</li>
+
+            <li>xarray</li>
+
+            <li>Matplotlib</li>
+
+            <li>SciPy</li>
+
+            <li>Cartopy</li>
+
+            <li>QGIS</li>
+
+        </ul>
+
+    </div>
+
+
+    <h2>
+        Reproducibility
+    </h2>
+
+    <p>
+        The processing scripts used to generate the analyses
+        and visualizations will be documented and stored in
+        the project repository. This approach allows the
+        analytical workflow to be reproduced and reviewed.
+    </p>
+
+</main>
+
+
+<footer>
+
+    © 2026 Ivaldo de Jesus Fumo · Ocean Data & Analysis
+
+</footer>
+
+</body>
+
+</html>
